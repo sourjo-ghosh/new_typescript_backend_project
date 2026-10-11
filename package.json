@@ -4,6 +4,8 @@
   "type": "module",
   "private": true,
   "scripts": {
+    "dev": "bun --watch run index.ts",
+    "start": "bun run index.ts",
     "typecheck": "bun check"
   },
   "devDependencies": {
@@ -11,5 +13,9 @@
   },
   "peerDependencies": {
     "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "@types/express": "^5.0.6",
+    "express": "^5.3.0"
   }
 }
